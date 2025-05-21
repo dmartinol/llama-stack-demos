@@ -7,6 +7,10 @@ resources:
   - ../../../llama-serve/llama3.2-3b
   - ./lmeval-rbac.yaml
   - ./lmeval-sa.yaml
+  - ./lmeval-data.yaml
+
+patchesStrategicMerge:
+  - add-props.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
